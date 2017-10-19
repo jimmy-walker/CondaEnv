@@ -13,6 +13,13 @@ Actually, it makes sense to create a new environment for each larger project.
 ###2.创建（新的开发环境会被默认安装在你conda目录下的envs文件目录下）
 `conda create --name py35 python=3.5`创建一个名为py35的环境，指定Python版本是3.5（不用管是3.5.x，conda会为我们自动寻找3.5.x中的最新版本），其实--name可以用-n来代替
 
+注意当需要安装32位的python时，使用如下方法设置，并在安装完包后，再切换回去。
+```linux
+set CONDA_FORCE_32BIT=1
+conda create -n py27_32 python=2.7
+set CONDA_FORCE_32BIT= #切换回去
+```
+
 ###3.复制环境
 `conda create -n conda35 --clone root`
 
