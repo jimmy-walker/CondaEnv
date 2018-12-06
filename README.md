@@ -41,7 +41,25 @@ or, the whole anaconda:
 
 ##配置jupyter notebook
 默认已经安装nb_conda
-  直接在jupyter中kernel菜单切换即可。
+直接在jupyter中kernel菜单切换即可。
+
+## 配置Pycharm
+
+### 加入conda env虚拟环境
+
+注意在选interpreter时，要选中文件夹中的`python.exe`文件。
+
+![](picture/setting.jpg)
+
+![](picture/interpreter.jpg)
+
+### 参数设置
+
+注意name可以随便起，script就选python文件的位置。
+
+![](picture/configuration.jpg)
+
+![](picture/parameter.jpg)
 
 ##包管理（当版本不对时调试...）
 `conda install -n conda35 numpy`安装package,如果不用-n指定环境名称，则被安装在当前活跃环境
